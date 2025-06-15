@@ -24,6 +24,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           src={product.image}
           alt={product.name}
           className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          onError={(e) => {
+            // Fallback to a placeholder if image fails to load
+            e.currentTarget.src = 'https://images.pexels.com/photos/1105019/pexels-photo-1105019.jpeg?auto=compress&cs=tinysrgb&w=500';
+          }}
         />
         <div className="absolute top-4 left-4">
           <span className="bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">
@@ -44,11 +48,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <span className="text-sm text-primary font-medium">{product.category}</span>
         </div>
         <h3 className="text-xl font-bold text-primary mb-2">{product.name}</h3>
+        <p className="text-text/70 mb-2 text-sm">Quantity: {product.quantity}</p>
         <p className="text-text/70 mb-4 line-clamp-2">{product.description}</p>
         
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold text-primary">
-            ${product.price.toFixed(2)}
+            ₹{product.price.toFixed(2)}
           </div>
           <button
             onClick={handleAddToCart}

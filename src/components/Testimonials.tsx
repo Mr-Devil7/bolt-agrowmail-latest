@@ -3,7 +3,11 @@ import React, { useContext } from 'react';
 import { Star, Quote } from 'lucide-react';
 import { LanguageContext } from '../context/LanguageContext';
 
-const Testimonials: React.FC = () => {
+interface TestimonialsProps {
+  onNavigate?: (section: string) => void;
+}
+
+const Testimonials: React.FC<TestimonialsProps> = ({ onNavigate }) => {
   const { t } = useContext(LanguageContext);
 
   const testimonials = [
@@ -32,6 +36,12 @@ const Testimonials: React.FC = () => {
       text: t('testimonials.items.2.text'),
     },
   ];
+
+  const handleStartJourney = () => {
+    if (onNavigate) {
+      onNavigate('services');
+    }
+  };
 
   return (
     <section className="py-20 bg-gradient-to-br from-accent/10 via-background to-primary/5">
@@ -73,6 +83,7 @@ const Testimonials: React.FC = () => {
         <div className="text-center mt-16">
           <p className="text-lg text-text/70 mb-4">{t('testimonials.join_cta')}</p>
           <button
+            onClick={handleStartJourney}
             className="bg-gradient-to-r from-primary to-primary-dark text-white px-8 py-4 rounded-lg font-medium hover:from-primary-dark hover:to-primary transition-all duration-200"
           >
             {t('testimonials.start_journey')}

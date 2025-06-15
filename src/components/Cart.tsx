@@ -17,11 +17,11 @@ const Cart: React.FC = () => {
     if (cartItems.length === 0) return;
 
     const orderDetails = cartItems.map(item => 
-      `${item.product.name} (${item.product.code}) - Qty: ${item.quantity} - $${(item.product.price * item.quantity).toFixed(2)}`
+      `${item.product.name} (${item.product.code}) - Qty: ${item.quantity} - ₹${(item.product.price * item.quantity).toFixed(2)}`
     ).join('\n');
     
     const total = getTotalPrice().toFixed(2);
-    const message = `Hi Agrow! I'd like to place an order:\n\n${orderDetails}\n\nTotal: $${total}\n\nPlease confirm availability and payment details.`;
+    const message = `Hi Agrow! I'd like to place an order:\n\n${orderDetails}\n\nTotal: ₹${total}\n\nPlease confirm availability and payment details.`;
     
     const whatsappUrl = `https://wa.me/918904959058?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -60,11 +60,15 @@ const Cart: React.FC = () => {
                     src={item.product.image}
                     alt={item.product.name}
                     className="w-16 h-16 object-cover rounded-lg"
+                    onError={(e) => {
+                      e.currentTarget.src = 'https://images.pexels.com/photos/1105019/pexels-photo-1105019.jpeg?auto=compress&cs=tinysrgb&w=500';
+                    }}
                   />
                   <div className="flex-1">
                     <h3 className="font-medium text-primary">{item.product.name}</h3>
                     <p className="text-sm text-text/60">{item.product.code}</p>
-                    <p className="text-primary font-medium">${item.product.price.toFixed(2)}</p>
+                    <p className="text-sm text-text/60">{item.product.quantity}</p>
+                    <p className="text-primary font-medium">₹{item.product.price.toFixed(2)}</p>
                   </div>
                   <div className="flex items-center space-x-2">
                     <button
@@ -99,7 +103,7 @@ const Cart: React.FC = () => {
             <div className="flex items-center justify-between mb-4">
               <span className="text-lg font-medium">Total:</span>
               <span className="text-2xl font-bold text-primary">
-                ${getTotalPrice().toFixed(2)}
+                ₹{getTotalPrice().toFixed(2)}
               </span>
             </div>
             <button

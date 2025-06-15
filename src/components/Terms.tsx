@@ -54,7 +54,7 @@ const Terms: React.FC = () => {
             Please read these terms carefully before using our services.
           </p>
           <p className="text-sm text-text/60 mt-2">
-            Last updated: January 2025
+            Last updated: May 2025
           </p>
         </div>
 

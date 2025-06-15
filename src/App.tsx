@@ -39,7 +39,7 @@ function App() {
             <About />
             <Offerings onNavigate={handleNavigate} />
             <Mission />
-            <Testimonials />
+            <Testimonials onNavigate={handleNavigate} />
           </>
         );
     }
