@@ -19,7 +19,7 @@ export const products: Product[] = [
     code: 'IN002',
     price: 3020,
     description: 'Powerful phosphorus-based insecticide for effective pest management.',
-    image: '/  Phoskill Insecticides.jpg',
+    image: '/Phoskill Insecticides.jpg',
     category: 'Insecticides',
     inStock: true,
     quantity: '5 litres'
