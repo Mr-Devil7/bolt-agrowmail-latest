@@ -227,115 +227,115 @@ export const products: Product[] = [
 
   // Fertilizers (10 products)
   {
-    id: 'FE001',
-    name: 'Ugaoo Plant Fertiliser Sticks',
-    code: 'FE001',
-    price: 280,
-    description: 'Convenient fertilizer sticks for easy plant nutrition and growth.',
-    image: '/Ugaoo Plant Fertiliser Sticks.jpg',
-    category: 'Fertilizers',
-    inStock: true,
-    quantity: '20 Sticks'
-  },
-  {
-    id: 'FE002',
-    name: 'Ugaoo Plant Vermi Compost',
-    code: 'FE002',
-    price: 350,
-    description: 'Organic vermicompost for natural soil enrichment and plant health.',
-    image: '/Ugaoo Plant Vermi Compost.jpg',
-    category: 'Fertilizers',
-    inStock: true,
-    quantity: '5 Kg'
-  },
-  {
-    id: 'FE003',
-    name: 'Plantify Plant Food Sticks',
-    code: 'FE003',
-    price: 540,
-    description: 'Nutrient-rich plant food sticks for sustained plant growth.',
-    image: '/Plantify Plant Food Sticks.jpg',
-    category: 'Fertilizers',
-    inStock: true,
-    quantity: '40 Sticks'
-  },
-  {
-    id: 'FE004',
-    name: 'GreenStix Plant Food Sticks',
-    code: 'FE004',
-    price: 540,
-    description: 'Premium plant food sticks for optimal plant nutrition.',
-    image: '/GreenStix Plant Food Sticks.jpg',
-    category: 'Fertilizers',
-    inStock: true,
-    quantity: '50 Sticks'
-  },
-  {
-    id: 'FE005',
-    name: 'Ugaoo Neem Cake Powder',
-    code: 'FE005',
-    price: 610,
-    description: 'Organic neem cake powder for natural fertilization and pest control.',
-    image: '/Ugaoo Neem Cake Powder.jpg',
-    category: 'Fertilizers',
-    inStock: true,
-    quantity: '5 Kg'
-  },
-  {
-    id: 'FE006',
-    name: 'Trust Basket Neem Oil For Plants',
-    code: 'FE006',
-    price: 299,
-    description: 'Pure neem oil for organic plant protection and soil conditioning.',
-    image: '/Trust Basket Neem Oil For Plants.jpg',
-    category: 'Fertilizers',
-    inStock: true,
-    quantity: '100 g'
-  },
-  {
-    id: 'FE007',
-    name: 'Ugaoo Neem Oil Spray For Plants',
-    code: 'FE007',
-    price: 399,
-    description: 'Ready-to-use neem oil spray for plant care and protection.',
-    image: '/Ugaoo Neem Oil Spray For Plants.jpg',
-    category: 'Fertilizers',
-    inStock: true,
-    quantity: '250 ml'
-  },
-  {
-    id: 'FE008',
-    name: 'TrustBasket 100% Organic Vermicompost',
-    code: 'FE008',
-    price: 330,
-    description: 'Pure organic vermicompost for sustainable plant nutrition.',
-    image: '/TrustBasket 100% Organic Vermicompost.jpg',
-    category: 'Fertilizers',
-    inStock: true,
-    quantity: '1 Kg'
-  },
-  {
-    id: 'FE009',
-    name: 'Kyari 100% Organic Neem Cake Powder',
-    code: 'FE009',
-    price: 200,
-    description: 'Certified organic neem cake powder for natural soil enhancement.',
-    image: '/Kyari 100% Organic Neem Cake Powder.jpg',
-    category: 'Fertilizers',
-    inStock: true,
-    quantity: '1 Kg'
-  },
-  {
-    id: 'FE010',
-    name: 'Ugaoo Organic Cow Dung Plant Manure',
-    code: 'FE010',
-    price: 510,
-    description: 'Traditional organic cow dung manure for natural plant nutrition.',
-    image: '/Ugaoo Organic Cow Dung Plant Manure.jpg',
-    category: 'Fertilizers',
-    inStock: true,
-    quantity: '5 Kg'
-  },
+  id: 'FE001',
+  name: 'Ugaoo Plant Fertiliser Sticks',
+  code: 'FE001',
+  price: 280,
+  description: 'Convenient fertilizer sticks for easy plant nutrition and growth.',
+  image: '/Ugaoo_Plant_Fertiliser_Sticks.jpg', // Updated
+  category: 'Fertilizers',
+  inStock: true,
+  quantity: '20 Sticks'
+},
+{
+  id: 'FE002',
+  name: 'Ugaoo Plant Vermi Compost',
+  code: 'FE002',
+  price: 350,
+  description: 'Organic vermicompost for natural soil enrichment and plant health.',
+  image: '/Ugaoo_Plant_Vermi_Compost.jpg', // Updated
+  category: 'Fertilizers',
+  inStock: true,
+  quantity: '5 Kg'
+},
+{
+  id: 'FE003',
+  name: 'Plantify Plant Food Sticks',
+  code: 'FE003',
+  price: 540,
+  description: 'Nutrient-rich plant food sticks for sustained plant growth.',
+  image: '/Plantify_Plant_Food_Sticks.jpg', // Updated
+  category: 'Fertilizers',
+  inStock: true,
+  quantity: '40 Sticks'
+},
+{
+  id: 'FE004',
+  name: 'GreenStix Plant Food Sticks',
+  code: 'FE004',
+  price: 540,
+  description: 'Premium plant food sticks for optimal plant nutrition.',
+  image: '/GreenStix_Plant_Food_Sticks.jpg', // Updated
+  category: 'Fertilizers',
+  inStock: true,
+  quantity: '50 Sticks'
+},
+{
+  id: 'FE005',
+  name: 'Ugaoo Neem Cake Powder',
+  code: 'FE005',
+  price: 610,
+  description: 'Organic neem cake powder for natural fertilization and pest control.',
+  image: '/Ugaoo_Neem_Cake_Powder.jpg', // Updated
+  category: 'Fertilizers',
+  inStock: true,
+  quantity: '5 Kg'
+},
+{
+  id: 'FE006',
+  name: 'Trust Basket Neem Oil For Plants',
+  code: 'FE006',
+  price: 299,
+  description: 'Pure neem oil for organic plant protection and soil conditioning.',
+  image: '/Trust_Basket_Neem_Oil_For_Plants.jpg', // Updated
+  category: 'Fertilizers',
+  inStock: true,
+  quantity: '100 g'
+},
+{
+  id: 'FE007',
+  name: 'Ugaoo Neem Oil Spray For Plants',
+  code: 'FE007',
+  price: 399,
+  description: 'Ready-to-use neem oil spray for plant care and protection.',
+  image: '/Ugaoo_Neem_Oil_Spray_For_Plants.jpg', // Updated
+  category: 'Fertilizers',
+  inStock: true,
+  quantity: '250 ml'
+},
+{
+  id: 'FE008',
+  name: 'TrustBasket 100% Organic Vermicompost',
+  code: 'FE008',
+  price: 330,
+  description: 'Pure organic vermicompost for sustainable plant nutrition.',
+  image: '/TrustBasket_100_Organic_Vermicompost.jpg', // Updated
+  category: 'Fertilizers',
+  inStock: true,
+  quantity: '1 Kg'
+},
+{
+  id: 'FE009',
+  name: 'Kyari 100% Organic Neem Cake Powder',
+  code: 'FE009',
+  price: 200,
+  description: 'Certified organic neem cake powder for natural soil enhancement.',
+  image: '/Kyari_100_Organic_Neem_Cake_Powder.jpg', // Updated
+  category: 'Fertilizers',
+  inStock: true,
+  quantity: '1 Kg'
+},
+{
+  id: 'FE010',
+  name: 'Ugaoo Organic Cow Dung Plant Manure',
+  code: 'FE010',
+  price: 510,
+  description: 'Traditional organic cow dung manure for natural plant nutrition.',
+  image: '/Ugaoo_Organic_Cow_Dung_Plant_Manure.jpg', // Updated
+  category: 'Fertilizers',
+  inStock: true,
+  quantity: '5 Kg'
+},
 
   // Plants (10 products)
   {
